@@ -18,20 +18,26 @@
     </style>
 </head>
 <body>
-    <h2>javascript events</h2>
+    <!-- JavaScript 이벤트 처리 및 함수 호출을 테스트하는 버튼 및 요소들 -->
+    <h2>자바스크립트 이벤트</h2>
     <button onclick="fun1()">fun1 함수</button>
     <button onclick="fun2('hello')">fun2 함수</button>
     <button onclick="fun3(this)">fun3 함수</button>
     
+    <!-- div1에 마우스 오버 및 아웃 이벤트를 설정하여 관련 함수 호출 -->
     <div id="div1" onmouseover="fun4()" onmouseout="fun5()"></div>
+    <!-- div2에 마우스 다운 및 업 이벤트를 설정하여 관련 함수 호출 -->
     <div id="div2" onmousedown="fun6()" onmouseup="fun7()"></div>
     
+    <!-- 키보드 이벤트를 처리하는 입력 필드들 -->
     <input type="text" onkeydown="fun8()" placeholder="입력하시죠">
     <input type="text" onkeyup="fun9()" placeholder="입력하시죠">
 
+    <!-- 포커스를 잃은 경우 이벤트를 처리하는 입력 필드 -->
     <input type="text" onblur="fun10()" placeholder="입력하시죠">
 </body>
 <script>
+    <!-- JavaScript로 정의된 함수들 -->
     const fun1 = () => {
         console.log("fun1 함수");
     }
