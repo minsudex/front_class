@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 문서의 문자 인코딩 및 뷰포트 설정 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 문서 제목 -->
     <title>Document</title>
+    
     <style>
+        /* 모든 요소의 크기를 계산할 때 테두리와 안팎 여백을 포함시킴 */
         * {
             box-sizing: border-box;
         }
+        
+        /* body에 두꺼운 검은 테두리와 높이 3000px 설정 */
         body {
             border: 5px solid black;
             height: 3000px;
         }
+        
+        /* 기본적인 div 스타일 설정 */
         div {
             width: 100px;
             height: 100px;
         }
+        
+        /* ID가 container1인 div에 빨간 테두리 설정 */
         #container1 {
             border: 5px solid red;
         }
+        
+        /* ID가 container2인 div에 녹색 테두리 설정 */
         #container2 {
             border: 5px solid green;
         }
+        
+        /* ID가 container3인 div에 파란 테두리 설정, 고정 위치 지정 */
         #container3 {
             border: 5px solid blue;
             position: fixed;
             bottom: 100px;
             right: 30px;
         }
+        
+        /* ID가 container4인 div에 노란 테두리 설정 */
         #container4 {
             border: 5px solid yellow;
         }
     </style>
 </head>
 <body>
+    <!-- ID가 container1인 div -->
     <div id="container1">div1</div>
+    
+    <!-- ID가 container2인 div -->
     <div id="container2">div2</div>
+    
+    <!-- ID가 container3인 div (고정 위치) -->
     <div id="container3">div3</div>
+    
+    <!-- ID가 container4인 div -->
     <div id="container4">div4</div>
 </body>
 </html>
